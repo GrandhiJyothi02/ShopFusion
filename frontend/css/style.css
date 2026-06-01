@@ -274,62 +274,115 @@ body{
     text-align:center;
 }
 
+
 /* MOBILE RESPONSIVE */
 
-@media screen and (max-width: 768px){
+@media screen and (max-width:768px){
 
     .navbar{
-        flex-direction: column;
-        gap: 15px;
-        padding: 15px;
+        flex-direction:column;
+        gap:15px;
+        padding:15px;
     }
 
     .logo-section{
-        position: static;
-        transform: none;
+        position:static;
+        transform:none;
     }
 
     .search-bar{
-        width: 100%;
+        width:100%;
     }
 
     .category-container{
-        gap: 15px;
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+        gap:15px;
     }
 
     .category-card{
-        width: 45%;
+        width:100%;
     }
 
     .category-card img{
-        width: 120px;
-        height: 120px;
+        width:120px;
+        height:120px;
     }
 
     .product-card{
-        flex-direction: column;
-        width: 95%;
-        text-align: center;
+        flex-direction:column;
+        text-align:center;
+        width:100%;
     }
 
     .product-card img{
-        width: 180px;
-        height: 180px;
+        width:180px;
+        height:180px;
     }
 
-    .address-form,
-    .payment-form{
-        width: 95%;
-        padding: 20px;
+    .product-info h2{
+        font-size:22px;
     }
 
-    .address-form input,
-    .payment-form input{
-        width: 100%;
+    .price{
+        font-size:24px;
     }
 
-    .buy-now-btn,
+    /* CART PAGE */
+
+    .buy-btn{
+        width:100%;
+        max-width:300px;
+        font-size:18px;
+    }
+
+    /* CHECKOUT PAGE */
+
+    .address-box{
+        width:95%;
+        margin:20px auto;
+        gap:15px;
+    }
+
+    .address-box input{
+        width:100%;
+        padding:15px;
+        font-size:16px;
+    }
+
+    .address-box button{
+        width:100%;
+        padding:15px;
+        font-size:18px;
+        font-weight:bold;
+    }
+
+    /* PAYMENT PAGE */
+
+    .checkout-container{
+        width:95%;
+        margin:20px auto;
+        padding:20px;
+    }
+
+    .checkout-container h1{
+        font-size:24px;
+    }
+
+    .payment-card{
+        font-size:18px;
+        padding:15px;
+    }
+
     .proceed-btn{
-        width: 100%;
+        width:100%;
+        font-size:18px;
+        padding:15px;
+    }
+
+    /* SUCCESS PAGE */
+
+    .tick{
+        font-size:80px;
     }
 }
