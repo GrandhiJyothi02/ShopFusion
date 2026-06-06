@@ -1,4 +1,4 @@
-const API_URL = "https://shopfusion-backend-aeng.onrender.com/"
+const API_URL = "https://shopfusion-backend-aeng.onrender.com/";
 // OPEN CATEGORY
 
 function openCategory(category) {
